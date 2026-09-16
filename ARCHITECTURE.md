@@ -17,6 +17,7 @@ The repository is durable program memory, not a chat archive or a replacement fo
 - Use stable SmartGym identifiers, narrow changes, immediate verification, and explicit uncertainty.
 - Joe is the final decision-maker and athlete/product-acceptance authority.
 - Roles and contracts belong to the project; Claude, Kiro, KiroCrew, or another capable environment may execute them.
+- Trainer, Product Owner/Architect/Auditor, and Lead Engineer are kept in separate Claude Projects/sessions with no shared conversation history, so no single session reasons across all three roles at once; see ENGINEERING.md's Role separation section.
 - Preserve enough documentation and evidence for a new execution environment to reproduce the system safely.
 
 ## Current architecture
@@ -28,7 +29,7 @@ The repository is durable program memory, not a chat archive or a replacement fo
 | Claude + SmartGym MCP | Current trainer interface: reads, reasons, proposes, and can make authorized routine writes | Does not redesign the program without approval |
 | SmartGym | Routine execution, exercise library, logging, history, and device sync | Live execution and training record |
 | `smart-gym-mcp` | Local bridge to the SmartGym database | Controlled integration surface, not a coach |
-| ChatGPT | Product Owner, architect, and auditor | Product/architecture authority; not primary trainer or record system |
+| Claude (Product Owner / Architect / Auditor session) | Product Owner, architect, and auditor | Product/architecture authority; not primary trainer or record system |
 
 ```text
 repository program files ──> trainer decision ──> SmartGym MCP ──> SmartGym

@@ -10,7 +10,7 @@ This document defines how Hybrid Athletic Trainer is built and maintained. It se
 
 | Role | Core responsibility |
 | --- | --- |
-| ChatGPT — Product Owner / Architect | Product vision, requirements, acceptance criteria, architecture, roadmap, and tradeoffs |
+| Claude — Product Owner / Architect / Auditor | Product vision, requirements, acceptance criteria, architecture, roadmap, tradeoffs, and independent audit of delivered work |
 | Lead Engineer | Turns a ready issue into a plan, selects a proportional team, coordinates delivery, resolves conflicts, and owns implementation consistency |
 | Implementation specialists | Bounded backend/cloud, integration, iOS, data, AI/coach, or other discipline work |
 | UX / product design | Information architecture, flows, terminology, accessibility, mobile UX, notification quality, and cognitive load; reviews before implementation |
@@ -19,6 +19,16 @@ This document defines how Hybrid Athletic Trainer is built and maintained. It se
 | Joe — athlete / product acceptance | Real-world fitness feedback and final acceptance that the product is useful, safe, and desirable |
 
 Claude, Kiro, KiroCrew, and similar systems are replaceable execution environments. They can fill one or more roles; they do not become the architecture or product authority simply by writing code.
+
+### Role separation across sessions
+
+Effective 2026-09-16, Claude holds the Product Owner / Architect / Auditor role directly (ChatGPT is unavailable). To keep this from muddling with the Trainer and Lead Engineer roles, the three run in separate Claude Projects/sessions that never share conversation history, all reading this same repository as the single source of truth:
+
+- **Trainer** — the SmartGym-connected coaching Project. Daily/weekly coaching only: reads the repository, proposes and executes authorized SmartGym changes. Does not redesign the program, edit the roadmap, or open engineering issues.
+- **Product Owner / Architect / Auditor** — a dedicated Project/session. Owns `ARCHITECTURE.md`, `ROADMAP.md`, and this document; classifies new ideas as observation, requirement, roadmap item, implementation task, architectural decision, or experiment (see Handling New Ideas in the project instructions); opens and refines GitHub Issues; audits delivered work against acceptance criteria. Does not give workouts or write to SmartGym.
+- **Lead Engineer + specialists** — a Cowork/Claude Code session working in this repository, scoped to a specific ready Issue. Implements, and requires independent QA/security review before merge.
+
+In a Cowork/Claude Code session, the "team" in the Proportional teams table below is the Lead Engineer session invoking one subagent per relevant role (implementer, UX reviewer, QA, security/reliability) rather than one conversation reasoning from every perspective at once — sequential for Level 1, parallel/pipelined for Level 2–3.
 
 ## Proportional teams
 
