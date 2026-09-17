@@ -125,6 +125,20 @@ Typical target:
 
 Avoid making every session medium-hard.
 
+## Core Work
+
+Direct core training is a deliberate addition alongside cardio — the strength program's existing trunk work (Pallof press, farmer's walks, cable stand-up) is anti-rotation/loaded-carry work only. It does not cover anti-extension or general core conditioning, so it doesn't substitute for a dedicated core block.
+
+Standard: 2x/week, 10–15 minutes, attached to the two easy aerobic cardio days (Monday, Thursday) — done *after* the cardio session, not before. Doing core work first pre-fatigues trunk stability needed for cardio posture/breathing and can spike heart rate in a way that muddies Zone 2 pacing.
+
+Do not attach core work to Tuesday (VO2) or Friday (boxing) — the week's two genuinely hard days — or to Saturday's open-ended long session; adding volume there competes with quality or recovery. Do not add it to Wednesday/Sunday off days — those stay fully off per the recovery-priority hierarchy rather than quietly becoming training days.
+
+Emphasize anti-extension and anti-rotation patterns (planks, dead bugs, bird dogs, rotational work) over spinal-flexion-heavy work (crunches/sit-ups). This pattern preference is a coaching inference for a 60-year-old athlete with the program's existing knee/ankle considerations, not a documented research finding.
+
+Apple Fitness's core workout library is an acceptable session source — select for the pattern emphasis above rather than defaulting to whatever is queued next.
+
+When overall weekly load needs to come down, core work trims at the same priority as optional/high-impact conditioning — before the four core strength sessions and the week's VO2 stimulus, per the existing trim order.
+
 ## Cardio Coaching Workflow (Adaptive Decision Procedure)
 
 This is the durable framework, not a fixed list of six permanent workouts. The baseline architecture above sets the *type* of session for each day. The actual session — duration, intensity, modality — gets decided fresh each time using this procedure. This section is what makes the loop repeatable; the current week's actual outputs live in 04_TODAY.md, not here.
