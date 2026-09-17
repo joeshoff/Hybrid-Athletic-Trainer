@@ -156,3 +156,9 @@ After a move, reinstall, or configuration change: update the project path, resta
 3. Confirm health and routine identity.
 4. Read the master program, cardio plan, this architecture, and live routines before coaching.
 5. Preserve decision records, verification evidence, and durable-rule changes in GitHub.
+
+### Remote access and Claude Desktop trust
+
+The SmartGym MCP connection is not a network service; it is a local process Claude Desktop starts on the host Mac. Claude Desktop shows its own local trust dialog on that Mac the first time it launches the `uv run --directory <smart-gym-mcp path> smartgym-mcp` command — a dialog only the person at the Mac's keyboard can answer.
+
+A Trainer session reached remotely (for example through a linked-device bridge) can only use this connection if Claude Desktop is already running and already trusted on the host Mac; it cannot itself click through a prompt nobody is present to answer. Remote coaching therefore depends on three operational preconditions, none of them currently designed or verified: Claude Desktop staying open (not quit) and the Mac staying awake, the trust decision for `smartgym-mcp` already having been granted while physically at the machine, and the launch command staying stable (an unstable `uv`-resolved interpreter or venv path can cause the trust dialog to reappear). This is an unverified operational workaround, not a designed remote-access capability — see ROADMAP.md Phase 1, "SmartGym integration hardening," and Phase 4's future AWS service foundation for a genuinely network-reachable connection.
