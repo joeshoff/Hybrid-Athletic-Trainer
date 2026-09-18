@@ -54,6 +54,8 @@ Notifications must be timely, explainable, actionable, rate-limited, easy to sup
 | P2 | Apple Watch companion | Planned | High | iOS foundation; low-friction readiness and in-workout support |
 | P2 | Post-session reflection | Planned | Medium | RPE, pain, completion, and qualitative signals for the event engine |
 
+Note: a personal Apple Health data pipeline (Health Auto Export → Google Drive primary, local MCP on-demand fallback) is already running for the athlete outside the product — see ARCHITECTURE.md's "Apple Health data ingestion" section. It supplies raw export data only; the consent, privacy model, and reconciliation work in the Apple Health integration row above remains Planned.
+
 ## Phase 4 — Service foundation and reliability
 
 | Priority | Capability | Status | Effort | Dependency / outcome |

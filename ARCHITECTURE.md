@@ -78,6 +78,21 @@ On 2026-09-15, Lower B (`z_pk` 26) was redesigned and re-read after writing:
 
 All six began with weight unset/0 and use 60-second rest. This is a verified snapshot, not a substitute for a fresh read.
 
+## Apple Health data ingestion (Health Auto Export)
+
+The athlete's iPhone runs Health Auto Export (a third-party iOS app) to bridge Apple Health data out to Claude sessions, ahead of the formal Apple Health integration described in Target architecture and ROADMAP.md Phase 3. Two independent channels are configured, by design, for different purposes:
+
+| Channel | Role | Trigger | Characteristics |
+| --- | --- | --- | --- |
+| Google Drive automations (`Health Auto Export/Health Data`, `Health Auto Export/Health Auto Export`) | Primary | Scheduled export from the app | Durable, asynchronous, available to any session without the athlete present; separate automations for Health Metrics and Workouts (the app's data-type categories cannot be combined into one automation) |
+| Local `health-auto-export` MCP server (`mcp-remote` to the phone's on-device REST server) | On-demand fallback | Explicit request in a live session | Real-time queryable (metrics, workouts, ECG, symptoms, and more); requires the phone and the Mac running Claude Desktop to be on the same LAN, and the local MCP config's URL to match the phone's current local IP |
+
+Drive is primary because it requires no live session and no network coincidence to succeed — data lands where a future session can retrieve it on its own. The local MCP path exists for "I need it right now" queries; it is not automatically triggered and depends on a session being explicitly asked to use it.
+
+**Known fragility:** the phone's local IP address changes whenever it joins a different Wi-Fi network (observed: moving from the corporate network to the home network broke the local MCP connection until the config's URL was manually updated to the phone's new address). A DHCP reservation for the phone on the home router mitigates this; without one, the failure will recur on every network change.
+
+This is infrastructure for the future Apple Health integration, not the integration itself — there is no consent model, privacy review, or reconciliation into the Trainer Event Engine yet. Data pulled through either channel is raw Apple Health export, not yet a trusted coaching input.
+
 ## Current write, verification, and backup behavior
 
 The demonstrated live loop is: **program knowledge → SmartGym inspection → proposed change → explicit athlete authorization → MCP write → immediate verification**.
