@@ -32,6 +32,8 @@ This is a prioritized capability backlog, not a date promise. It protects the wo
 | P1 | Longitudinal performance and recovery view | Planned | Medium | Reliable ingestion and athlete-facing interpretation |
 | P1 | SmartGym integration hardening | Planned | Medium | Capability inventory, error paths, recovery drill, history/schema verification |
 
+Note: a 2026-09-17 finding sharpens this item's scope — a successful MCP write does not guarantee timely or complete iOS sync (delayed, partially diverged, or silently reverted by an unrelated app action), and the app surfaces no staleness or divergence indicator; see ARCHITECTURE.md's Known limits. This occurred on a safety-relevant change (an injury-risk exercise swap), not only a cosmetic one. The fix approach — confirmation-required writes, a sync-status check surfaced to the coach, eventual-consistency warnings, or another design — is an open architectural decision, not yet made.
+
 ## Phase 2 — Proactive coaching and notifications
 
 | Priority | Capability | Status | Effort | Dependency / outcome |

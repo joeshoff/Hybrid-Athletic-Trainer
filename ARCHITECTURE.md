@@ -116,6 +116,7 @@ The MCP creates a full database backup before each real write; the observed loca
 - `smartgym_update_exercise` changes metadata, not the catalog exercise identity.
 - `smartgym_reorder_routine` only reorders existing slots and requires every `ue_pk` exactly once.
 - Observed exercise-history behavior is not confirmed from schema and must not become a permanent rule without evidence.
+- A write reported as successful, and reflected immediately on macOS (the app the connector reads/writes locally), does not guarantee timely or complete iOS sync, and the app UI surfaces no staleness or divergence indicator. Observed on 2026-09-17 over a ~2 hour session: a safety-relevant exercise removal sat un-synced on iOS for over an hour; a 7-exercise routine replacement partially diverged, leaving macOS and iOS with different exercise lists under the same routine; an iOS archive/unarchive cycle silently reverted an MCP-applied rename. The only way found to read iOS's actual state independent of the app UI or the connector's own reads was decoding SmartGym's `backup.gym` export (an NSKeyedArchiver plist; routines keyed by `uniqueHashID`, with `dateRemoved` marking soft-deleted rows).
 
 ## Authorization and safety boundaries
 
