@@ -22,9 +22,10 @@ Claude, Kiro, KiroCrew, and similar systems are replaceable execution environmen
 
 ### Role separation across sessions
 
-Effective 2026-09-16, Claude holds the Product Owner / Architect / Auditor role directly (ChatGPT is unavailable). To keep this from muddling with the Trainer and Lead Engineer roles, the three run in separate Claude Projects/sessions that never share conversation history, all reading this same repository as the single source of truth:
+Effective 2026-09-16, Claude holds the Product Owner / Architect / Auditor role directly (ChatGPT is unavailable). Effective 2026-09-19, this repository also hosts Nutritionist as a sibling pillar (see ARCHITECTURE.md's Purpose and Current architecture). To keep these from muddling with each other, each role runs in a separate Claude Project/session that never shares conversation history, all reading this same repository as the single source of truth:
 
 - **Trainer** — the SmartGym-connected coaching Project. Daily/weekly coaching only: reads the repository, proposes and executes authorized SmartGym changes. Does not redesign the program, edit the roadmap, or open engineering issues.
+- **Nutritionist** — the menu, meal-planning, and shopping-guidance Project. Reads the repository for shared athlete context; recommends from a menu, plans meals and shopping, and (once built) tracks macros. Does not redesign the training program, edit the roadmap, write to SmartGym, or open engineering issues.
 - **Product Owner / Architect / Auditor** — a dedicated Project/session. Owns `ARCHITECTURE.md`, `ROADMAP.md`, and this document; classifies new ideas per Handling New Ideas below; opens and refines GitHub Issues; audits delivered work against acceptance criteria. Does not give workouts or write to SmartGym.
 - **Lead Engineer + specialists** — a Cowork/Claude Code session working in this repository, scoped to a specific ready Issue. Implements, and requires independent QA/security review before merge.
 

@@ -11,13 +11,15 @@ Hybrid Athletic Trainer is a small, safety-conscious coaching system for one ath
 
 The repository is durable program memory, not a chat archive or a replacement for SmartGym.
 
+This repository is the shared home for a small suite of sibling pillars under one personal healthy-lifestyle-management system for the same athlete: Hybrid Athletic Trainer (training, described above) and, as of 2026-09-19, Nutritionist (menu, meal-planning, shopping, and eventually macro-tracking guidance) — with room for more later. Each pillar keeps its own reasoning session and its own record system where one exists (SmartGym for training; none yet for nutrition), while this repository stays their shared durable intent. See Current architecture and ENGINEERING.md's Role separation section for how pillars relate, and Nutritionist (menu, meal-planning, and shopping guidance) below for what's built versus planned.
+
 ## Principles
 
 - Separate **intent** (repository), **reasoning** (trainer), and **record** (SmartGym).
 - Use stable SmartGym identifiers, narrow changes, immediate verification, and explicit uncertainty.
 - Joe is the final decision-maker and athlete/product-acceptance authority.
 - Roles and contracts belong to the project; Claude, Kiro, KiroCrew, or another capable environment may execute them.
-- Trainer, Product Owner/Architect/Auditor, and Lead Engineer are kept in separate Claude Projects/sessions with no shared conversation history, so no single session reasons across all three roles at once; see ENGINEERING.md's Role separation section.
+- Trainer, Nutritionist, Product Owner/Architect/Auditor, and Lead Engineer are kept in separate Claude Projects/sessions with no shared conversation history, so no single session reasons across every role at once; see ENGINEERING.md's Role separation section.
 - Preserve enough documentation and evidence for a new execution environment to reproduce the system safely.
 
 ## Current architecture
@@ -30,6 +32,7 @@ The repository is durable program memory, not a chat archive or a replacement fo
 | SmartGym | Routine execution, exercise library, logging, history, and device sync | Live execution and training record |
 | `smart-gym-mcp` | Local bridge to the SmartGym database | Controlled integration surface, not a coach |
 | Claude (Product Owner / Architect / Auditor session) | Product Owner, architect, and auditor | Product/architecture authority; not primary trainer or record system |
+| Claude (Nutritionist session) | Menu, recipe, and shopping guidance from stated goals and constraints; future macro tracking | Does not redesign the training program, edit `ARCHITECTURE.md`/`ROADMAP.md`, or write to SmartGym |
 
 ```text
 repository program files ──> trainer decision ──> SmartGym MCP ──> SmartGym
@@ -47,6 +50,8 @@ The trainer starts with relevant repository files and a live SmartGym read, then
 - `03_CARDIO_PLAN.md` — cardio framework and adaptive decision procedure.
 - `04_TODAY.md` — current-week prescription.
 - `ARCHITECTURE.md`, `ROADMAP.md`, and `ENGINEERING.md` — system, product direction, and build operating model.
+
+Nutrition-specific documents (menu guidance, meal plans, shopping lists) will be added here once the Nutritionist pillar produces durable content worth preserving; none exist yet.
 
 ## SmartGym integration and identities
 
@@ -92,6 +97,12 @@ Drive is primary because it requires no live session and no network coincidence 
 **Known fragility:** the phone's local IP address changes whenever it joins a different Wi-Fi network (observed: moving from the corporate network to the home network broke the local MCP connection until the config's URL was manually updated to the phone's new address). A DHCP reservation for the phone on the home router mitigates this; without one, the failure will recur on every network change.
 
 This is infrastructure for the future Apple Health integration, not the integration itself — there is no consent model, privacy review, or reconciliation into the Trainer Event Engine yet. Data pulled through either channel is raw Apple Health export, not yet a trusted coaching input.
+
+## Nutritionist (menu, meal-planning, and shopping guidance)
+
+Demonstrated capability: given a photo of a restaurant menu and the athlete's stated goals, produce a recommendation. This was demonstrated ad hoc, outside this repository, before the pillar existed here (2026-09-19).
+
+Not yet decided: a food-logging or macro-tracking backend; whether nutrition guidance reads training load or macro targets from the Trainer pillar, or the reverse; and where meal plans, shopping lists, and recurring guidance get preserved as durable documents versus staying conversational. Until these are decided, Nutritionist guidance is stateless per conversation — the same conservative default Trainer used before SmartGym writes were authorized.
 
 ## Current write, verification, and backup behavior
 
@@ -160,6 +171,7 @@ AWS is a future foundation for authenticated APIs, event processing, storage, no
 - Permanent all-knowing chat memory.
 - A fixed autoregulation contract before enough real coaching sessions establish safe boundaries.
 - AWS infrastructure, iOS/Watch clients, or notification automation before the event and policy contracts are specified and tested.
+- A food-logging or macro-tracking backend, or coupling nutrition guidance to training load/targets, before that integration is explicitly designed.
 
 ## Reproducibility and recovery
 

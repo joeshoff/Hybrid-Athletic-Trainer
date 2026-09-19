@@ -76,9 +76,16 @@ Note: a personal Apple Health data pipeline (Health Auto Export → Google Drive
 - Replacing SmartGym’s workout log before a deliberate migration decision.
 - Cloud/mobile build-out before a tested event-policy contract.
 
-## Flagged for Product Owner review (not yet roadmap items)
+## Nutrition
 
-- 2026-09-19: Joe raised a nutrition/menu-photo advisor ("Nutritionist") — a photo of a restaurant menu already produces a usable recommendation; wanted next for restaurant/prep/shopping menu planning, and eventually macro tracking. Whether this belongs in this repository as a new component (mirroring the Trainer / Product-Owner / Lead-Engineer role-separation pattern, and eventually coupled to training load and macro targets the way SmartGym data feeds coaching) or as a separate, unrelated product is an open architectural decision. Not decided; not yet a committed roadmap item.
+New sibling pillar, decided 2026-09-19 (see ARCHITECTURE.md's Purpose, Current architecture, and Nutritionist section; ENGINEERING.md's Role separation). Phase numbering here starts fresh rather than continuing Phase 0-4 above, which remain Trainer-specific.
+
+| Priority | Capability | Status | Effort | Dependency / outcome |
+| --- | --- | --- | --- | --- |
+| P0 | Nutritionist Claude Project, reading this repository per the Trainer role-separation pattern | Foundation | Low | Same read-only, no-shared-history boundary Trainer has |
+| P1 | Menu-photo restaurant recommendation | Foundation | Low | Already demonstrated ad hoc, outside this repository; formalize as a repeatable capability |
+| P1 | Meal-prep and grocery-list menu planning | Planned | Medium | Builds on the menu-photo capability |
+| P2 | Macro tracking | Planned | Medium | Requires a food-logging backend/integration decision and a decision on whether it couples to training load / macro targets (see ARCHITECTURE.md's Deliberately not being built yet) |
 
 ## Sequencing rule
 
