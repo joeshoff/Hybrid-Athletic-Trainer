@@ -25,7 +25,7 @@ Claude, Kiro, KiroCrew, and similar systems are replaceable execution environmen
 Effective 2026-09-16, Claude holds the Product Owner / Architect / Auditor role directly (ChatGPT is unavailable). To keep this from muddling with the Trainer and Lead Engineer roles, the three run in separate Claude Projects/sessions that never share conversation history, all reading this same repository as the single source of truth:
 
 - **Trainer** — the SmartGym-connected coaching Project. Daily/weekly coaching only: reads the repository, proposes and executes authorized SmartGym changes. Does not redesign the program, edit the roadmap, or open engineering issues.
-- **Product Owner / Architect / Auditor** — a dedicated Project/session. Owns `ARCHITECTURE.md`, `ROADMAP.md`, and this document; classifies new ideas as observation, requirement, roadmap item, implementation task, architectural decision, or experiment (see Handling New Ideas in the project instructions); opens and refines GitHub Issues; audits delivered work against acceptance criteria. Does not give workouts or write to SmartGym.
+- **Product Owner / Architect / Auditor** — a dedicated Project/session. Owns `ARCHITECTURE.md`, `ROADMAP.md`, and this document; classifies new ideas per Handling New Ideas below; opens and refines GitHub Issues; audits delivered work against acceptance criteria. Does not give workouts or write to SmartGym.
 - **Lead Engineer + specialists** — a Cowork/Claude Code session working in this repository, scoped to a specific ready Issue. Implements, and requires independent QA/security review before merge.
 
 In a Cowork/Claude Code session, the "team" in the Proportional teams table below is the Lead Engineer session invoking one subagent per relevant role (implementer, UX reviewer, QA, security/reliability) rather than one conversation reasoning from every perspective at once — sequential for Level 1, parallel/pipelined for Level 2–3.
@@ -39,6 +39,21 @@ In a Cowork/Claude Code session, the "team" in the Proportional teams table belo
 | Level 3 — system | Notifications, mobile client, Trainer Event Engine | Product/architecture + Lead + backend/cloud + AI/coach + data + UX + security/reliability + QA |
 
 Roles may be sequential. The requirement is independent, meaningful review—not a ritualized agent count.
+
+## Handling New Ideas
+
+Before anything Joe raises becomes an Issue, a roadmap line, or an architecture change, the Product Owner / Architect / Auditor session classifies it into exactly one of the categories below and says which one out loud. Classification is not drafting: a vague or incomplete idea is refined by asking Joe, not by silently rounding it up to whichever category is easiest to act on, and it is never silently promoted straight to a permanent requirement.
+
+| Category | What it is | Where it goes | What happens next |
+| --- | --- | --- | --- |
+| Observation | A fact noticed during training, coaching, or system use — not yet a request for change | Logged in `05_COACHING_LOG.md` or the relevant document; no roadmap or architecture change | May later sharpen into another category; carries no commitment on its own |
+| Requirement | A stated need or constraint the system must satisfy, but not yet a plan for how to satisfy it | Captured in `01_MASTER_PROGRAM.md`, `ARCHITECTURE.md`, or a roadmap line, depending on scope | Refined until it is either a roadmap item, an architectural decision, or folded into an existing one |
+| Roadmap item | A capability worth building, not yet committed to a phase or priority | Added to `ROADMAP.md` under the appropriate phase, or under "Flagged for Product Owner review" when phase, scope, or a prerequisite decision isn't yet settled | Moves to Foundation/Planned status, with priority and dependencies, once it's ready to be written up |
+| Architectural decision | A choice that changes what the system is, how its components relate, or a boundary in `ARCHITECTURE.md` | Documented in `ARCHITECTURE.md` (or explicitly recorded there as deferred) with the decision and its rationale | Requires Joe's explicit sign-off before any Lead Engineer work depends on it |
+| Implementation task | A scoped, ready piece of work | Opened as a GitHub Issue only once it meets the Definition of Ready | Enters the Work flow below |
+| Experiment | A time- or scope-boxed exploration meant to produce evidence, not a shipped capability | Noted in `ROADMAP.md` or a coaching-log entry as an experiment, naming the question it answers and how it concludes | Its outcome is itself the next idea to classify — a successful experiment does not silently become a permanent requirement |
+
+An idea can span more than one category — a new athlete-facing capability is often a roadmap item *and* an architectural decision at once. When that happens, say so explicitly rather than picking one. No conversational idea skips this step on its way to an Issue or a code change; that is what keeps Lead Engineer sessions from inventing product scope, and it is why this classification belongs to the Product Owner / Architect / Auditor role and no other.
 
 ## Work flow
 
