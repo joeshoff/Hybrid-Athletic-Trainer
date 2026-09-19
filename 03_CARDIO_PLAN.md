@@ -203,6 +203,21 @@ to determine actual effort.
 
 When comparing treadmill and outdoor running, distinguish research-supported conclusions from coaching estimates.
 
+## Pre-effort check — long or flagged cardio sessions
+
+Before any cardio effort classified as long (60+ min) or flagged as a
+test/key session for the week, the trainer asks about, and the athlete
+reports:
+
+- Hydration in the hours before (not just at the start line)
+- Fueling status going in
+- Plan for hydration/fueling during, if the effort runs past ~45–60 min
+- Heat/conditions, if outdoor
+
+Purpose: catch controllable variables (hydration, fueling) before they
+show up as unexplained HR/pace anomalies after the fact. Companion to
+the post-workout athlete-reported data the trainer already collects.
+
 ## Coaching Requirement
 
 The coach runs the Cardio Coaching Workflow above to create the actual cardio prescription for the current day/week. This file defines how that decision gets made — it does not dictate exact workouts. The current week's actual prescriptions live in 04_TODAY.md as a short-term artifact, separate from this framework.
