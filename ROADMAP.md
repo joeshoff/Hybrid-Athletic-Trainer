@@ -34,6 +34,8 @@ This is a prioritized capability backlog, not a date promise. It protects the wo
 
 Note: a 2026-09-17 finding sharpens this item's scope — a successful MCP write does not guarantee timely or complete iOS sync (delayed, partially diverged, or silently reverted by an unrelated app action), and the app surfaces no staleness or divergence indicator; see ARCHITECTURE.md's Known limits. This occurred on a safety-relevant change (an injury-risk exercise swap), not only a cosmetic one. The fix approach — confirmation-required writes, a sync-status check surfaced to the coach, eventual-consistency warnings, or another design — is an open architectural decision, not yet made.
 
+Note: a 2026-09-19 coaching-log observation (see 05_COACHING_LOG.md) proposes automating within-session aerobic-decoupling detection (split a long steady-state session at the midpoint, compare avg HR vs. avg pace/speed each half) from Health Auto Export data, rather than doing it by hand. This sharpens this item's scope as a candidate sub-capability; it is not yet a committed roadmap item — raised here as a flag for Product Owner review, not decided.
+
 ## Phase 2 — Proactive coaching and notifications
 
 | Priority | Capability | Status | Effort | Dependency / outcome |
