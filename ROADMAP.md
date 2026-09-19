@@ -76,6 +76,10 @@ Note: a personal Apple Health data pipeline (Health Auto Export → Google Drive
 - Replacing SmartGym’s workout log before a deliberate migration decision.
 - Cloud/mobile build-out before a tested event-policy contract.
 
+## Flagged for Product Owner review (not yet roadmap items)
+
+- 2026-09-19: Joe raised a nutrition/menu-photo advisor ("Nutritionist") — a photo of a restaurant menu already produces a usable recommendation; wanted next for restaurant/prep/shopping menu planning, and eventually macro tracking. Whether this belongs in this repository as a new component (mirroring the Trainer / Product-Owner / Lead-Engineer role-separation pattern, and eventually coupled to training load and macro targets the way SmartGym data feeds coaching) or as a separate, unrelated product is an open architectural decision. Not decided; not yet a committed roadmap item.
+
 ## Sequencing rule
 
 First document and verify the loop; then formalize decisions and events; then add proactive notifications; then mobile interaction; then the service reliability needed to operate confidently. Prototypes may explore later phases, but may not bypass earlier safety and decision contracts.
