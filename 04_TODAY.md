@@ -41,6 +41,8 @@ OFF — cardio and strength both.
 
 **Strength — Optional wildcard.** Not mandatory; decide day-of.
 
+**Logged outcome — aerobic decoupling.** Pace faded ~14:00/mi → ~15:20/mi across the run while HR held flat (~119 → 120 bpm). One data point — watch the next long Zone 2 effort for the same pattern before treating it as signal.
+
 ### Sunday 9/20
 
 OFF — cardio and strength both.
