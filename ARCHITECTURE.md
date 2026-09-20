@@ -31,6 +31,7 @@ This repository is the shared home for a small suite of sibling pillars under on
 | Claude + SmartGym MCP | Current trainer interface: reads, reasons, proposes, and can make authorized routine writes | Does not redesign the program without approval |
 | SmartGym | Routine execution, exercise library, logging, history, and device sync | Live execution and training record |
 | `smart-gym-mcp` | Local bridge to the SmartGym database | Controlled integration surface, not a coach |
+| Google Drive (SmartGym state cache) | Best-effort snapshot of live SmartGym state (routines, current program, recent workout history), refreshed by a session with live Mac/SmartGym MCP access | Read-only fallback for sessions without Mac access; may be stale; never the record of truth and never a write path |
 | Claude (Product Owner / Architect / Auditor session) | Product Owner, architect, and auditor | Product/architecture authority; not primary trainer or record system |
 | Claude (Nutritionist session) | Menu, recipe, and shopping guidance from stated goals and constraints; future macro tracking | Does not redesign the training program, edit `ARCHITECTURE.md`/`ROADMAP.md`, or write to SmartGym |
 
@@ -97,6 +98,20 @@ Drive is primary because it requires no live session and no network coincidence 
 **Known fragility:** the phone's local IP address changes whenever it joins a different Wi-Fi network (observed: moving from the corporate network to the home network broke the local MCP connection until the config's URL was manually updated to the phone's new address). A DHCP reservation for the phone on the home router mitigates this; without one, the failure will recur on every network change.
 
 This is infrastructure for the future Apple Health integration, not the integration itself — there is no consent model, privacy review, or reconciliation into the Trainer Event Engine yet. Data pulled through either channel is raw Apple Health export, not yet a trusted coaching input.
+
+## SmartGym state cache and Apple Health workout fallback (decided 2026-09-20)
+
+**Problem.** A session reached remotely (see "Remote access and Claude Desktop trust" above) can only read live SmartGym state when Claude Desktop is running, trusted, and the host Mac is awake. Without that, a remote or mobile session has no SmartGym data to work from at all — including cases where a workout (e.g., a run) was captured by Apple Health on iOS but has not yet synced into SmartGym's macOS app.
+
+**Decision — SmartGym cache.** A best-effort snapshot of live SmartGym state (routines, current program, recent workout history) is written to Google Drive by a session that has live Mac/SmartGym MCP access, mirroring the pattern Apple Health data ingestion already uses Drive for above — the same "always-on store" role Drive plays elsewhere in this architecture. The cache is:
+
+- read-only — no session writes to SmartGym through the cache, ever;
+- explicitly timestamped as of its last refresh, so any session reading it can state how stale it is;
+- never treated as the record of truth — SmartGym via `smart-gym-mcp` remains the only write path and the only authoritative source when reachable.
+
+**Decision — Apple Health workout fallback.** When SmartGym (live or cached) has no entry for a workout that Apple Health shows as completed, the Apple Health data may be surfaced as an advisory fallback only. It must be presented to Joe explicitly labeled as unverified and not yet reconciled into SmartGym (e.g., "Apple Health shows a run yesterday; not yet reflected in SmartGym") — never as if it were a logged SmartGym set. This holds the same conservative stance already stated above: raw Apple Health export is not yet a trusted coaching input. Promoting it to authoritative status, or building reconciliation logic that writes it into SmartGym or the coaching record, is future work and requires its own privacy/consent decision (see "Deliberately not being built yet").
+
+**Rationale.** This does not solve the underlying remote-write dependency on the host Mac (see "Remote access and Claude Desktop trust" above); it only makes reads resilient. It reuses existing infrastructure (Drive is already the always-on store; Health Auto Export → Drive is already running) rather than building new infrastructure ahead of Phase 4's AWS service foundation. See ROADMAP.md Phase 1 ("SmartGym integration hardening") and Phase 3 ("Apple Health integration") for where the build work is tracked.
 
 ## Nutritionist (menu, meal-planning, and shopping guidance)
 
@@ -172,6 +187,7 @@ AWS is a future foundation for authenticated APIs, event processing, storage, no
 - A fixed autoregulation contract before enough real coaching sessions establish safe boundaries.
 - AWS infrastructure, iOS/Watch clients, or notification automation before the event and policy contracts are specified and tested.
 - A food-logging or macro-tracking backend, or coupling nutrition guidance to training load/targets, before that integration is explicitly designed.
+- Treating Apple Health workout data as authoritative over SmartGym, or automatically reconciling the two, before a privacy/consent decision is made (see "SmartGym state cache and Apple Health workout fallback").
 
 ## Reproducibility and recovery
 
@@ -190,3 +206,5 @@ After a move, reinstall, or configuration change: update the project path, resta
 The SmartGym MCP connection is not a network service; it is a local process Claude Desktop starts on the host Mac. Claude Desktop shows its own local trust dialog on that Mac the first time it launches the `uv run --directory <smart-gym-mcp path> smartgym-mcp` command — a dialog only the person at the Mac's keyboard can answer.
 
 A Trainer session reached remotely (for example through a linked-device bridge) can only use this connection if Claude Desktop is already running and already trusted on the host Mac; it cannot itself click through a prompt nobody is present to answer. Remote coaching therefore depends on three operational preconditions, none of them currently designed or verified: Claude Desktop staying open (not quit) and the Mac staying awake, the trust decision for `smartgym-mcp` already having been granted while physically at the machine, and the launch command staying stable (an unstable `uv`-resolved interpreter or venv path can cause the trust dialog to reappear). This is an unverified operational workaround, not a designed remote-access capability — see ROADMAP.md Phase 1, "SmartGym integration hardening," and Phase 4's future AWS service foundation for a genuinely network-reachable connection.
+
+The SmartGym state cache decided above (see "SmartGym state cache and Apple Health workout fallback") mitigates this for reads only — a remote session can consult the Drive cache when it can't reach `smart-gym-mcp`. It does not change the write dependency described in this section.
