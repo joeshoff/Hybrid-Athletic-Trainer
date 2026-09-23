@@ -20,6 +20,9 @@ This is a prioritized capability backlog, not a date promise. It protects the wo
 | P0 | Stable routine identity contract | Proven | Low | Query/write by `z_pk`, not `NULL` routine names |
 | P0 | Repeatable coaching-session checklist and evidence capture | Foundation | Low | Consistent inspect → propose → authorize → verify loop |
 | P0 | Reconcile repository snapshots with live SmartGym | Foundation | Low | Prevents stale documentation from driving decisions |
+| P0 | Workout-scoped SmartGym set history + per-workout detail read (`smartgym_get_workout_detail`) | Foundation | Medium | Fixes `smartgym_get_routine` grouping sets by row-creation date instead of workout; gives the Trainer a post-workout read. Blocks accurate progression decisions (found 2026-09-23) |
+
+Note: 2026-09-23 — `smartgym_get_routine` in `smart-gym-mcp` v0.2.0 reports per-exercise history wrong once a routine repeats (first seen on Lower A, `z_pk` 25, after workout_pk 11 on 9/22). Code read: the history query groups `ZVALUES` rows by `date(ZDATEADDED)` (the day the set row was created) and does not exclude template sets (`ZDATELOGGED IS NULL`), so prescription rows show up as a "session" and one workout's sets split across dates. Decision: fix in place in a Joe-owned fork of `smart-gym-mcp` rather than a new access module (see ARCHITECTURE.md Known limits). Tracked as a GitHub Issue; read-only against the DB.
 
 ## Phase 1 — Explainable and durable coaching decisions
 
