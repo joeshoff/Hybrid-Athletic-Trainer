@@ -56,20 +56,24 @@ Nutrition-specific documents (menu guidance, meal plans, shopping lists) will be
 
 ## SmartGym integration and identities
 
-Routine names are currently `NULL`. Use routine `z_pk` for every MCP query or write; human labels are only conversational.
+Use routine `z_pk` for every MCP query or write; human labels are only conversational. Routines have been recreated at least once, so a `z_pk` is only as good as its last verification. Re-verified 2026-09-23 via `smartgym_list_routines` (names are now populated; earlier they were `NULL`). The previous IDs 24/25/23/26 no longer exist; a query against them returns "not found."
 
 | Routine `z_pk` | Day | Human label | SmartGym `days` |
 | --- | --- | --- | --- |
-| 24 | Monday | Upper A | 2 |
-| 25 | Tuesday | Lower A | 3 |
-| 23 | Thursday | Upper B | 5 |
-| 26 | Friday | Lower B | 6 |
+| 60 | Monday | Upper A | 2 |
+| 65 | Tuesday | Lower A | 3 |
+| 73 | Thursday | Upper B | 5 |
+| 59 | Friday | Lower B | 6 |
+| 74 | Unscheduled | Variety Day A | — |
+| 75 | Unscheduled | Variety Day B | — |
 
 - A catalog exercise `z_pk` identifies an exercise that can be added.
 - A `ue_pk` identifies a routine-specific exercise slot.
 - They are not interchangeable. A post-write read must verify slot identity, order, sets, reps, notes, and rest.
 
 ### Verified Lower B state
+
+Historical: routine `z_pk` 26 and the `ue_pk` values below no longer exist (see the identity table above). Kept as the record of the first verified write.
 
 On 2026-09-15, Lower B (`z_pk` 26) was redesigned and re-read after writing:
 
@@ -204,7 +208,7 @@ AWS is a future foundation for authenticated APIs, event processing, storage, no
 
 The local MCP project is `/Users/joe.hoff/smart-gym-mcp`, cloned from `https://github.com/sla1k/smart-gym-mcp`. It requires macOS, SmartGym, Python 3.11+, and `uv`. Claude Desktop’s MCP configuration is at `/Users/joe.hoff/Library/Application Support/Claude/claude_desktop_config.json` and runs `uv run --directory <smart-gym-mcp path> smartgym-mcp`.
 
-After a move, reinstall, or configuration change: update the project path, restart the execution environment, call `smartgym_health`, list routines, and verify `z_pk` 24, 25, 23, and 26 before acting.
+After a move, reinstall, or configuration change: update the project path, restart the execution environment, call `smartgym_health`, list routines, and verify the routine `z_pk` values in the identity table above before acting.
 
 1. Clone this repository and `smart-gym-mcp`.
 2. Run `uv sync` in the MCP project and configure its launcher.
