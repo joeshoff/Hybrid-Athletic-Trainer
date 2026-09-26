@@ -32,3 +32,14 @@ the midpoint, compare avg HR and avg pace (or speed) each half. Needs
 formalizing as a repeatable check — worth a roadmap item for automating
 this from the Health Auto Export data rather than doing it by hand each
 time.
+
+## Fri 9/25 Lower B (SmartGym workout 14, 20:16, 69m, avg HR 91 / max 122)
+- Single-leg DL, bench-supported: 25 lb (11.3 kg). SmartGym shows 4x8, likely the template default; actual was one light set. Left side: less back, little glute. Right side: much more back, back fatigues first. Right glute strain from 9/15 hill VO2 (~2 wks), "fine, something there." Hold 25 lb, load set by right side.
+- Smith hip thrust 90 lb x10x3: easy, quads > glutes, no glute feel. Next: feet out, 2s pause with pelvic tuck. Hold 90.
+- Step-up 15 lb x8x4 (16" box): 3-5 reps left, knee normal, hop risk at higher load. Next: 17.5 lb.
+- Standing leg curl 35 lb x10x3: 2-3 left. Next: 37.5 lb x10.
+- Leg extension 65 lb x10x3 (corrected in SmartGym from 8): ~5 left. Next: 75 lb x8, knee check.
+- Single-arm KB farmer's walk: 53 lb (24 kg), 45s x3/side, grip fine (no gloves, relaxed hand). SmartGym still shows 0 lb x10 (no edit path). Next: 70 lb (32 kg).
+- Tuesday VO2: no steep hills until right glute is 100%. Use bike or flat treadmill.
+- Sat 9/26: 90+ min hike, no vest (or 10-15 lb max), Z2 to low Z3, pre-effort check applies. Optional evening upper-body-only session.
+- Pipeline: sync re-created the workout under a new pk (13 to 14).
