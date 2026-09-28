@@ -43,3 +43,15 @@ time.
 - Tuesday VO2: no steep hills until right glute is 100%. Use bike or flat treadmill.
 - Sat 9/26: 90+ min hike, no vest (or 10-15 lb max), Z2 to low Z3, pre-effort check applies. Optional evening upper-body-only session.
 - Pipeline: sync re-created the workout under a new pk (13 to 14).
+
+## Sun 9/27 — week review, elbow, and mechanism change
+
+**SmartGym history confirmed for all four strength sessions (9/21 Upper A, 9/22 Lower A, 9/24 Upper B, 9/25 Lower B)** via `smartgym_get_workout_history` + `smartgym_get_workout_detail(workout_pk)`. Pattern across nearly every session: planned load bumps written into SmartGym exercise notes were not taken — weight stayed at the app's pre-filled template value even where reps were maxed (row 85→held, lateral raise 10→held, pushdown 40→held, hammer curl 25→held, hip thrust 90→held, leg extension 65→held). Third time this has shown up.
+
+**Notes-as-target-channel retired.** Joe's decision: lean on SmartGym's own post-workout "Update" suggestions instead of the trainer writing exercise notes. Update is a flat +1-rep suggestion with no load-bump logic, so it only produces the right number on pure rep-progression targets — every load-bump target still needs the weight entered by hand. 04_TODAY.md now marks each exercise Update-OK or manual every week.
+
+**Elbow — distal biceps tendon (prior PRP site) still tender.** Twinge during hammer curls first reported 9/24; confirmed still tender 9/27. Hammer Curl cut entirely from both Upper A and Upper B (not reduced load) starting the week of 9/28. Reassess weekly; escalate to the PRP provider if it isn't clearly improving.
+
+**Farmer's walk weight logging, still not resolved.** Single-arm KB farmer's walk (Lower B): 9/18 never logged; 9/25 reps logged (10×3) but weight logged as 0. Real load per 9/25 note above is 53 lb (24 kg) with headroom to 70 lb (32 kg). No post-workout edit path in the app either way — instruction stands to log the actual weight live.
+
+**Documentation-integrity note — not a training issue, flagged to PO/Architect separately:** Friday's actual pattern (~30m boxing + ~5m trailing core) has now held for three weeks (9/18, 9/25, 9/28 week) against 03_CARDIO_PLAN.md's Core Work section, which explicitly excludes Friday. Repeated flagging without a written resolution — needs an actual decision in that Project, not a fourth note here.
