@@ -4,95 +4,92 @@ This is the short-term planning artifact. It holds the actual day-by-day prescri
 
 This file gets overwritten each week (or updated as the week's actual training comes in). It is not an archive.
 
-## Week of September 28 – October 4, 2026
+## Week of October 5 – October 11, 2026 — re-entry week
 
-### Status inputs as of Sunday 9/27
+### Read first
 
-- All four strength sessions from last week confirmed via SmartGym workout history (not just notes): Upper A 9/21, Lower A 9/22, Upper B 9/24, Lower B 9/25.
-- Pattern across nearly every session: planned load bumps written into SmartGym exercise notes were **not** taken — weight stayed at the app's pre-filled template value even where reps were maxed. Third time this has shown up. Notes-as-target-channel is retired as of 9/27 — see "Progression mechanism" below.
-- **Elbow — tendon still tender, confirmed 9/27.** Twinge during hammer curls 9/24, same region as the prior distal biceps tendon PRP site. Hammer Curl is **cut entirely** from Upper A and Upper B this week, not reduced. Reassess next week; if not clearly improving, loop in whoever did the PRP.
-- Right-side stability (single-leg deadlift, since 9/18) and right glute awareness (Saturday hike, 9/26) — same side, different movements, still just watching, not linked yet.
-- Resting HR still trending up (57→63 since July, one 79 spike 9/24) — not acted on, but keeping Monday/Thursday genuinely easy.
+Last week ran 3 of 4 strength sessions and a big Saturday, but travel and allergies broke the middle of it. From the Health Auto Export files (SmartGym was not reachable from the Trainer session, so loads and reps are unverified):
 
-### Progression mechanism — decided 9/27
+- Mon 9/28: Upper A + 10m core. Evening treadmill ramp to exhaustion (max HR test, peak 167 on the OH1) took the place of Zone 2.
+- Tue 9/29: Lower A + 10m core. AM run was 55m easy (avg 114), not VO2. **No interval work happened last week.**
+- Wed 9/30: off.
+- Thu 10/1: elliptical 43m AM (avg 119), then an 82m outdoor ride at 4:25pm, then Upper B at 6:50pm + 11m core. That is the third time cardio got stacked on a strength day.
+- Fri 10/2: a 4-minute run and nothing else on the watch. **Lower B and boxing did not happen** unless Joe says otherwise.
+- Sat 10/3: outdoor ride, 143m, 20 mi, avg HR 112, max 161. Big aerobic day.
+- Resting HR 58 (9/30), 65, 63, 66 (10/3). Up from the 57 baseline, consistent with travel plus allergies.
 
-Joe's call: lean on SmartGym's own post-workout "Update" suggestions rather than the trainer writing exercise notes. Limit: Update is a flat +1-rep suggestion with no load-bump logic, so it only lands correctly on pure rep-progression targets. Every load-bump target below still needs the new weight entered by hand before the set. Marked per exercise: **Update-OK** or **manual**.
+**Re-entry rule for strength:** no new bumps stacked on top of unverified loads. Take last week's targets (below). If you hit every set clean with 2+ reps left, that number is the new baseline and next week's sheet bumps from it. If you didn't hit it, repeat it.
 
-### Monday 9/28
+**Elbow:** hammer curl stays cut from Upper A and Upper B. Status check owed — tender, same, or better? If it isn't clearly better by Thursday, call whoever did the PRP.
 
-**Cardio — Zone 2, 40–50 min, treadmill.** Bike/elliptical/outdoor were all used in the prior 6 days — treadmill for rotation.
+**Gate for the VO2 day (Tuesday):** go if resting HR is 63 or lower and allergies aren't wrecking sleep. Otherwise do Zone 2 and move the intervals to Thursday's slot. Don't stack an interval day on a bad-sleep day.
 
-**Strength — Upper A.**
-- Bench Press with Dumbbell — 45 lb × 8 × 3 confirmed clean. Push to 45 lb × 9–10 × 3 before any load. **Update-OK.**
-- Seated Cable Row, Narrow Grip — held at 85 lb × 10 × 3 across 3+ sessions, reps maxed. Bump: 87.5–90 lb × 8 × 3. **Manual.**
-- Shoulder Press w/ DB — held 25 lb × 8 × 3. Push to 25 lb × 9–10 × 3. **Update-OK.**
-- TRX Face Pull — 3×12 bodyweight, hold.
-- Side Lateral Raise w/ DB — held 10 lb × 12 × 3 despite two prior bump calls, reps maxed. Bump: 12.5 lb × 12 × 3. **Manual.**
-- Cable Triceps Pushdown — held 40 lb × 12, only 2 sets logged both times (plan calls for 3). Get the 3rd set in; bump: 42.5 lb × 12 × 3. **Manual.**
-- **Hammer Curl — cut this week.** Tendon confirmed still tender. Skip entirely, reassess next week.
-- Cable Pallof Press — 30 lb × 10 × 3, holding clean. No change.
-- Farmer's Walk w/ DB — 30 lb, reps not logged (duration-based). Hold load, target ~40s × 3, log the time this session.
+### Schedule
 
-**Core — 10m, Apple Fitness library, after cardio.** Anti-extension/anti-rotation emphasis per 03_CARDIO_PLAN.md.
+| Day | Cardio | Strength | Note |
+|---|---|---|---|
+| Mon 10/5 | Zone 2, 40–50m, elliptical on HR-control 121 off the H10 | Upper A | Core 10m after cardio |
+| Tue 10/6 | VO2, bike: 10m warm-up, 4 × 3m hard (HR 150–162 by minute 2) with 3m easy, 5m cool-down, ~35m | Lower A | Bike so the legs stay fresh for Lower A |
+| Wed 10/7 | Off | Off | |
+| Thu 10/8 | Aerobic, 45–50m, treadmill incline walk or easy jog, Zone 2 | Upper B | Core 10m after cardio. **No second ride on Thursday.** |
+| Fri 10/9 | Boxing, 30–45m | Lower B | Trailing ~5m core per actual pattern |
+| Sat 10/10 | Long outdoor, 60–90m. Track run (easy) or hike. No vest and long duration together | Optional wild card, skip if Friday slipped | If the glute is clean, keep it aerobic, not a stroll |
+| Sun 10/11 | Off | Off | |
 
-### Tuesday 9/29
+Zone 2 = 108–125 bpm. Tempo = 126–143. Max HR is not settled: OH1 peak 167 on 9/28, true max thought to be 170–175. Interval targets above assume ~172.
 
-**Cardio — VO2/quality, 30–45 min, treadmill or bike intervals.** The week's one genuinely hard day.
+Core checklist (Apple Fitness, not in SmartGym):
+- [ ] Monday 10/5
+- [ ] Thursday 10/8
 
-**Strength — Lower A.**
-- Hack Squat — 140 lb × 8 × 3 confirmed 9/22 (exact repeat of 9/15, no bump taken). Push to 140 lb × 9 × 3. **Update-OK.**
-- Smith RDL (stiff leg) — 140 lb × 8 × 3 confirmed, same story. Push to 140 lb × 9–10 × 3 (straps OK — grip, not back, was the limiter). **Update-OK** for +1; go manual to +2 if that feels easy.
-- Incline Leg Press — 180 lb × 10 × 3 confirmed, reps maxed twice. Bump: 200 lb × 8 × 3. **Manual.**
-- Standing Leg Curl — 35 lb × 10 × 3 confirmed clean (also ran clean in Lower B 9/25 at the same weight). Bump: 40 lb × 10 × 3. **Manual.**
-- Calf Press (leg press machine) — 180 lb × 10 × 3 confirmed. Bump: 200 lb × 12–15 × 3 with a 2s pause at the bottom. **Manual.**
-- Cable Abduction — 10/15 lb × 12 confirmed. Consolidate at 15 lb × 12 × 3; add a 4th set only if clean. **Manual.**
-- Cable Pallof Press — 30 lb × 10 × 3, been easy everywhere it's shown up. Bump: 35 lb × 10 × 3. **Manual.**
+### Progression mechanism
 
-### Wednesday 9/30
+Unchanged from 9/27: SmartGym's post-workout Update adds one rep and nothing else. **Update-OK** means a pure rep target. **Manual** means enter the new weight before the first set.
 
-OFF — cardio and strength both.
+### Strength targets (same as the 9/28 sheet — repeat if not hit)
 
-### Thursday 10/1
+**Upper A (Mon)**
+- Bench Press with Dumbbell — 45 lb × 9–10 × 3. Update-OK.
+- Seated Cable Row, Narrow Grip — 87.5–90 lb × 8 × 3. Manual.
+- Shoulder Press w/ DB — 25 lb × 9–10 × 3. Update-OK.
+- TRX Face Pull — 3 × 12 bodyweight.
+- Side Lateral Raise w/ DB — 12.5 lb × 12 × 3. Manual.
+- Cable Triceps Pushdown — 42.5 lb × 12 × 3, get all 3 sets in. Manual.
+- Hammer Curl — cut.
+- Cable Pallof Press — 30 lb × 10 × 3.
+- Farmer's Walk w/ DB — 30 lb, ~40s × 3, log the time.
 
-**Cardio — Aerobic/mixed, 40–60 min.** Different modality from Monday.
+**Lower A (Tue)**
+- Hack Squat — 140 lb × 9 × 3. Update-OK.
+- Smith RDL — 140 lb × 9–10 × 3, straps OK. Update-OK.
+- Incline Leg Press — 200 lb × 8 × 3. Manual.
+- Standing Leg Curl — 40 lb × 10 × 3. Manual.
+- Calf Press — 200 lb × 12–15 × 3, 2s pause at the bottom. Manual.
+- Cable Abduction — 15 lb × 12 × 3. 4th set only if clean.
+- Cable Pallof Press — 35 lb × 10 × 3. Manual.
 
-**Strength — Upper B.**
-- Cable Lat Pulldown — held 65 lb × 8 × 3 multiple sessions, reps stuck at 8. Push to 65 lb × 9 × 3. **Update-OK.**
-- Shoulder Press w/ DB — matches Monday: 25 lb × 9–10 × 3. **Update-OK.**
-- Incline Bench Press w/ DB — 50 lb × 10 × 3 confirmed clean twice, reps maxed. Bump: 52.5 lb × 8 × 3. **Manual.**
-- Seated Cable Row, Narrow Grip — matches Monday's bump: 87.5–90 lb × 8 × 3. **Manual.**
-- Side Lateral Raise w/ DB — matches Monday: 12.5 lb × 12 × 3. **Manual.**
-- Cable Triceps Pushdown — matches Monday: 42.5 lb × 12 × 3. **Manual.**
-- **Hammer Curl — cut this week**, same as Monday.
-- Cable Stand-up — held 20 lb × 10 × 3, reps not yet maxed. Push to 20 lb × 11–12 × 3, focus on rotation quality before load. **Update-OK.**
+**Upper B (Thu)**
+- Cable Lat Pulldown — 65 lb × 9 × 3. Update-OK.
+- Shoulder Press w/ DB — 25 lb × 9–10 × 3. Update-OK.
+- Incline Bench Press w/ DB — 52.5 lb × 8 × 3. Manual.
+- Seated Cable Row, Narrow Grip — 87.5–90 lb × 8 × 3. Manual.
+- Side Lateral Raise w/ DB — 12.5 lb × 12 × 3. Manual.
+- Cable Triceps Pushdown — 42.5 lb × 12 × 3. Manual.
+- Hammer Curl — cut.
+- Cable Stand-up — 20 lb × 11–12 × 3. Update-OK.
 
-**Core — 10m, Apple Fitness library, after cardio.**
-
-### Friday 10/2
-
-**Cardio — Boxing, 30–45 min.** Actual pattern for three weeks running (9/18, 9/25, this week) is ~30m boxing + ~5m trailing core, against a written plan that excludes Friday core — see Watching below.
-
-**Strength — Lower B.**
-- Single Leg Deadlift w/ DB — held 25 lb × 8 × 4. Right-side stability flag still open (not pain) — hold load, check it again, prioritize clean control. No change.
-- Smith Hip Thrust — 90 lb × 10 × 3 confirmed twice at RPE 2/reps-in-reserve, no bump taken either time. Bump: 105 lb × 8 × 3. **Manual.**
-- Step Up w/ DB — 15 lb × 8 × 4 confirmed clean. Bump: 17.5 lb × 8 × 4 — watch knee response, it's a knee-loading unilateral move. **Manual.**
-- Standing Leg Curl — 35 lb × 10 × 3 confirmed clean 9/25. Hold this week — Lower A takes the bump to 40 on Tuesday; see how that lands first. No change.
-- Leg Extension Machine — 65 lb × 10 × 3 confirmed twice at RPE 2. Bump, moderate given the knee constraint: 70 lb × 8 × 3. **Manual.**
-- Single Arm Farmer's Walk w/ KB — reps logged this time (10 × 3) but weight still shows 0 in the app. Last reported load was 53–55 lb. Hold that load, log the actual weight this time — no post-workout edit if missed again.
-
-### Saturday 10/3
-
-**Cardio — Long outdoor/adventure, 45–90+ min.** Saturday's hike (9/26) landed as an easy stroll — avg HR 97, below Zone 2. If the glute feels clean, this can carry a real aerobic stimulus rather than another stroll. Vest only at hike/walk pace if used; no adding load and duration together.
-
-**Strength — Optional wildcard.** Decide day-of.
-
-### Sunday 10/4
-
-OFF — cardio and strength both.
+**Lower B (Fri)** — last ran 9/25, so this is a 14-day gap. First set of each lift is a feel set.
+- Single Leg Deadlift w/ DB — 25 lb × 8 × 4. Hold load, control first. Right-side flag still open.
+- Smith Hip Thrust — 105 lb × 8 × 3 if the first set moves easy, otherwise 90 lb × 10 × 3. Manual.
+- Step Up w/ DB — 17.5 lb × 8 × 4, watch the knee. Manual.
+- Standing Leg Curl — 35 lb × 10 × 3. Hold.
+- Leg Extension Machine — 70 lb × 8 × 3. Manual.
+- Single Arm Farmer's Walk w/ KB — 53–55 lb, log the actual weight.
 
 ### Watching
 
-- **Elbow — cut hammer curl this week, tendon confirmed still tender 9/27.** Reassess next week; escalate to the PRP provider if it isn't clearly better by then.
-- **Right-side stability** (single-leg deadlift, 9/18) + **right glute** (hike, 9/26) — same side, different movements, still not linking them, still watching.
-- **Resting HR** 57→63 trend, one 79 spike 9/24, HRV soft same day. Not acted on.
-- **Friday core** — 03_CARDIO_PLAN.md's Core Work section attaches core only to Monday/Thursday and explicitly excludes Friday. Actual Friday practice has been ~30m boxing + ~5m trailing core for three weeks running (9/18, 9/25, this week). This is a repo-doc conflict, not a training problem — flagged to the PO/Architect Project for a decision, not something the Trainer session resolves unilaterally.
+- **Elbow** — see above.
+- **Right-side stability** (single-leg deadlift) and **right glute** (hike 9/26) — same side, still not linked.
+- **Resting HR** — 58→66 across last week. Allergies and travel are the likely cause. Not acted on yet; the Tuesday gate uses it.
+- **Thursday stacking** — third occurrence (9/17, 10/1, and the evening-ride pattern). One cardio session on strength days, in the morning.
+- **Friday core** — still open for the Product Owner/Architect: the cardio plan excludes Friday core but practice includes it.
