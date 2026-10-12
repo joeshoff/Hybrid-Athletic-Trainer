@@ -42,7 +42,7 @@ Core checklist (Apple Fitness, not in SmartGym):
 
 ### Progression mechanism
 
-Targets have to be weights you can actually load. Dumbbells above 25 go in 5s (no 27.5). Unchanged from 9/27 otherwise: SmartGym's post-workout Update adds one rep and nothing else. **Update-OK** means a pure rep target. **Manual** means type the new weight in before the first set.
+Targets have to be weights you can actually load. Dumbbells go 7.5, 10, 12.5, 15, then 5 lb steps (20, 25, 30). Cable stacks go in 2.5s. Otherwise unchanged from 9/27: SmartGym's post-workout Update adds one rep and nothing else. **Update-OK** means a pure rep target. **Manual** means type the new weight in before the first set.
 
 ### Strength targets
 
@@ -53,7 +53,7 @@ Rule: hit every set with 2+ reps left and the next step is yours. Reps to the to
 - Seated Cable Row, Narrow Grip: 90 lb × 9–10 × 3. Update-OK.
 - Shoulder Press w/ DB: 25 lb × 11–12 × 3. Update-OK. The next step is 30, once 25 × 12 × 3 leaves 2 reps in the tank.
 - TRX Face Pull: 3 × 12 bodyweight. Hold.
-- Side Lateral Raise w/ DB: 17.5 lb × 8–10 × 3. Manual.
+- Side Lateral Raise w/ DB: 15 lb × 13–15 × 3. Update-OK. Next step is 20 once 15 × 15 × 3 leaves 2 reps in the tank.
 - Cable Triceps Pushdown: 50 lb × 10 × 3. Manual. 45 has been easy.
 - Hammer Curl: cut.
 - Cable Pallof Press: 35 lb × 10 × 3. Manual.
@@ -63,28 +63,28 @@ Rule: hit every set with 2+ reps left and the next step is yours. Reps to the to
 - Hack Squat: 150 lb × 8 × 3. Manual. Watch the knees on the feel set.
 - Smith RDL: 150 lb × 8 × 3, straps OK. Manual.
 - Incline Leg Press: 200 lb × 9–10 × 3. Update-OK.
-- Standing Leg Curl: 45 lb × 8 × 3. Manual.
+- Standing Leg Curl: 42.5 lb × 8 × 3. Manual. 40 × 11 last time. The 45 target was a 5 lb jump on a stack that moves in 2.5s.
 - Calf Press: 200 lb × 13–15 × 3, 2s pause at the bottom. Update-OK.
 - Cable Abduction: 15 lb × 12 × 3. Manual.
 - Cable Pallof Press: 35 lb × 10 × 3. Manual.
 
 **Upper B (Thu)** (last: 9/24)
 - Cable Lat Pulldown: 65 lb × 9 × 3. Update-OK.
-- Shoulder Press w/ DB: 25 lb × 11–12 × 3. Update-OK.
-- Incline Bench Press w/ DB: 52.5 lb × 8 × 3. Manual.
-- Seated Cable Row, Narrow Grip: 90 lb × 9–10 × 3. Update-OK.
-- Side Lateral Raise w/ DB: same load as Monday, 8–10 reps. Manual.
-- Cable Triceps Pushdown: 50 lb × 10 × 3. Manual.
+- Shoulder Press w/ DB: 25 lb × 9–10 × 3. Update-OK. Last Upper B was 25 × 8.
+- Incline Bench Press w/ DB: 55 lb × 8 × 3. Manual. Last time 50 × 10 × 3, so this is the load step.
+- Seated Cable Row, Narrow Grip: 90 lb × 8 × 3. Manual. Last Upper B was 85 × 10.
+- Side Lateral Raise w/ DB: 15 lb × 10 × 3. Manual. Last Upper B was 10 lb × 12. If the feel set leaves under 2 reps, drop to 12.5 lb × 12.
+- Cable Triceps Pushdown: 50 lb × 10 × 3. Manual. 47.5 if Monday's 50 was a grind.
 - Hammer Curl: cut.
 - Cable Stand-up: 20 lb × 11–12 × 3. Update-OK.
 
 **Lower B (Fri)** (last: 9/25)
 - Single Leg Deadlift w/ DB: 25 lb × 8 × 4. Hold the load, control first. Right-side flag still open.
 - Smith Hip Thrust: 105 lb × 8 × 3 if set 1 moves easy, otherwise 90 lb × 10 × 3. Manual.
-- Step Up w/ DB: 17.5 lb × 8 × 4, watch the knee. Manual.
+- Step Up w/ DB: 15 lb × 10 × 4, watch the knee. Manual. Last time 15 × 8 × 4 with 3 to 5 reps left. 17.5 doesn't exist and 20 is a big step with hop risk, so reps come first.
 - Standing Leg Curl: 40 lb × 10 × 3. Manual. Lower A ran 40×11, so Friday moves up.
 - Leg Extension Machine: 70 lb × 8 × 3. Manual.
-- Single Arm Farmer's Walk w/ KB: 53–55 lb, log the actual weight.
+- Single Arm Farmer's Walk w/ KB: 24 kg (53 lb), 50s per side × 3. Log the actual weight.
 
 ### Watching
 
