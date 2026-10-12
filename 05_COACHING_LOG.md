@@ -55,3 +55,17 @@ time.
 **Farmer's walk weight logging, still not resolved.** Single-arm KB farmer's walk (Lower B): 9/18 never logged; 9/25 reps logged (10×3) but weight logged as 0. Real load per 9/25 note above is 53 lb (24 kg) with headroom to 70 lb (32 kg). No post-workout edit path in the app either way — instruction stands to log the actual weight live.
 
 **Documentation-integrity note — not a training issue, flagged to PO/Architect separately:** Friday's actual pattern (~30m boxing + ~5m trailing core) has now held for three weeks (9/18, 9/25, 9/28 week) against 03_CARDIO_PLAN.md's Core Work section, which explicitly excludes Friday. Repeated flagging without a written resolution — needs an actual decision in that Project, not a fourth note here.
+
+## Sun 10/11: week review and 10/12 plan
+
+SmartGym read after Joe synced the macOS app. Before the sync, history stopped at 10/1. The smartgym local MCP also timed out twice (60s) before it responded, so the first read said "no sessions" when there were three. Cardio data (HAE exports) was not reviewed for this plan.
+
+- Upper A, 10/5 (workout 18, 21:14, 43m): bench 45×10×3, row 90×8×3, press 25×10×3, face pull 12×3, lateral 15×12×3, pushdown 45×12×3, Pallof 32.5×10×3, farmer's 30 lb 40s×3 (time logged this time).
+- Lower A, 10/6 (workout 20, 20:17, 57m): hack 140×10×3, RDL 140×11×3, leg press 200×8×3, leg curl 40×11×3, calf 200×12×3, abduction 12.5×12×3, Pallof 32.5×11×3.
+- Sat 10/10, Variety Day A (workout 19, 78m, 0 HR): landmine squat and press 25×8×3, KB swing 35×15×4, goblet squat 53×10×3, landmine row 35×10×3, plus bodyweight finishers, battle ropes, jump rope. No HR means the watch was not recording.
+- Not run: Upper B (last 9/24) and Lower B (last 9/25). No SmartGym sessions 10/8 or 10/9.
+- Manual bumps on Lower A mostly did not land (RDL 150, leg curl 45, abduction 20, Pallof 35). Reps ran past the range instead, so those loads carry into 10/13 as the target. Upper A manual bumps did land. Reps-left was not collected for Lower A; the feel-set rule covers it.
+- Elbow: Joe reports the biceps tendon is the only open issue. Hammer curl stays cut.
+- Plan: Upper A and Lower A progress. Upper B and Lower B run on their programmed targets after a 2.5-week gap, with the feel-set fallback.
+
+Proposal for the Product Owner/Architect: the trainer session read an empty week as fact when the sync was stale and the MCP slow. A staleness check (latest workout date vs. latest HAE workout file) before any "nothing happened" conclusion would have caught it.
