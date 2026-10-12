@@ -42,7 +42,7 @@ Core checklist (Apple Fitness, not in SmartGym):
 
 ### Progression mechanism
 
-Unchanged from 9/27. SmartGym's post-workout Update adds one rep and nothing else. **Update-OK** means a pure rep target. **Manual** means type the new weight in before the first set.
+Targets have to be weights you can actually load. Dumbbells above 25 go in 5s (no 27.5). Unchanged from 9/27 otherwise: SmartGym's post-workout Update adds one rep and nothing else. **Update-OK** means a pure rep target. **Manual** means type the new weight in before the first set.
 
 ### Strength targets
 
@@ -51,10 +51,10 @@ Rule: hit every set with 2+ reps left and the next step is yours. Reps to the to
 **Upper A (Mon)** (last: 10/5)
 - Bench Press with Dumbbell: 50 lb × 8 × 3. Manual.
 - Seated Cable Row, Narrow Grip: 90 lb × 9–10 × 3. Update-OK.
-- Shoulder Press w/ DB: 27.5 lb × 8 × 3. Manual.
+- Shoulder Press w/ DB: 25 lb × 11–12 × 3. Update-OK. The next step is 30, once 25 × 12 × 3 leaves 2 reps in the tank.
 - TRX Face Pull: 3 × 12 bodyweight. Hold.
 - Side Lateral Raise w/ DB: 17.5 lb × 8–10 × 3. Manual.
-- Cable Triceps Pushdown: 47.5 lb × 10 × 3. Manual.
+- Cable Triceps Pushdown: 50 lb × 10 × 3. Manual. 45 has been easy.
 - Hammer Curl: cut.
 - Cable Pallof Press: 35 lb × 10 × 3. Manual.
 - Farmer's Walk w/ DB: 30 lb, 45s × 3. Log the time.
@@ -70,11 +70,11 @@ Rule: hit every set with 2+ reps left and the next step is yours. Reps to the to
 
 **Upper B (Thu)** (last: 9/24)
 - Cable Lat Pulldown: 65 lb × 9 × 3. Update-OK.
-- Shoulder Press w/ DB: same load as Monday, 8–10 reps. Manual.
+- Shoulder Press w/ DB: 25 lb × 11–12 × 3. Update-OK.
 - Incline Bench Press w/ DB: 52.5 lb × 8 × 3. Manual.
 - Seated Cable Row, Narrow Grip: 90 lb × 9–10 × 3. Update-OK.
 - Side Lateral Raise w/ DB: same load as Monday, 8–10 reps. Manual.
-- Cable Triceps Pushdown: same load as Monday, 10 reps. Manual.
+- Cable Triceps Pushdown: 50 lb × 10 × 3. Manual.
 - Hammer Curl: cut.
 - Cable Stand-up: 20 lb × 11–12 × 3. Update-OK.
 

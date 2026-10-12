@@ -69,3 +69,5 @@ SmartGym read after Joe synced the macOS app. Before the sync, history stopped a
 - Plan: Upper A and Lower A progress. Upper B and Lower B run on their programmed targets after a 2.5-week gap, with the feel-set fallback.
 
 Proposal for the Product Owner/Architect: the trainer session read an empty week as fact when the sync was stale and the MCP slow. A staleness check (latest workout date vs. latest HAE workout file) before any "nothing happened" conclusion would have caught it.
+
+Equipment constraint, 10/11: Joe pointed out 27.5 lb dumbbells don't exist (25 or 30), which is part of why some planned bumps never happened. Shoulder press moved to 25 × 11–12 (rep progression, Update-OK) and pushdown to 50 × 10 (45 has been easy). Other targets that may not be real weights and are unchecked: incline DB 52.5, lateral raise 17.5, step-up 17.5, plate-loaded steps (hack 150, RDL 150, hip thrust 105). Asked Joe for the actual increments. Before writing any load target, check it against the increments he gives; do not assume 2.5 lb steps.
