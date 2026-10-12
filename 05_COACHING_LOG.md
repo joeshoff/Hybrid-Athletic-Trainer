@@ -58,7 +58,7 @@ time.
 
 ## Sun 10/11: week review and 10/12 plan
 
-SmartGym read after Joe synced the macOS app. Before the sync, history stopped at 10/1. The smartgym local MCP also timed out twice (60s) before it responded, so the first read said "no sessions" when there were three. Cardio data (HAE exports) was not reviewed for this plan.
+SmartGym read after Joe synced the macOS app. Before the sync, history stopped at 10/1. The smartgym local MCP also timed out twice (60s) before it responded, so the first read said "no sessions" when there were three. HAE exports read afterward (workouts folder has only 10/5, 10/6 and 10/10 for the week; metrics folder has every day). Mon 10/5: elliptical 54.5m, watch avg 119, max 141, core 10.5m. Tue 10/6: indoor cycling 38.7m, avg 130, max 166 (the VO2 intervals happened), core 10.5m. Wed 10/7 to Fri 10/9: no workouts, 4 to 13 exercise minutes a day, HR max 89 to 109, so no Thursday cardio and no boxing. Sat 10/10: Variety Day A 78.5m (no HR) then outdoor cycling 26.9m, avg 142, max 162, 4.6 mi, tempo not Zone 2. Sun 10/11: rest. Resting HR 61 (10/7), 63, 64, 72 (single sample at 00:02 on 10/10, HRV median 21 that day), 64 (10/11). The Tuesday gate moved from 63 to 64 for that reason: rested days ran 61 to 64, so 63 would fail a normal day.
 
 - Upper A, 10/5 (workout 18, 21:14, 43m): bench 45×10×3, row 90×8×3, press 25×10×3, face pull 12×3, lateral 15×12×3, pushdown 45×12×3, Pallof 32.5×10×3, farmer's 30 lb 40s×3 (time logged this time).
 - Lower A, 10/6 (workout 20, 20:17, 57m): hack 140×10×3, RDL 140×11×3, leg press 200×8×3, leg curl 40×11×3, calf 200×12×3, abduction 12.5×12×3, Pallof 32.5×11×3.

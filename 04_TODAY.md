@@ -12,6 +12,7 @@ SmartGym, checked 10/11 after a manual sync:
 
 - **Upper A (10/5) and Lower A (10/6) ran. Upper B and Lower B did not.** Nothing logged 10/8 or 10/9. Upper B is now 18 days out (last 9/24), Lower B 17 (last 9/25). Both run this week on their programmed targets, no more "repeat and hope."
 - Sat 10/10 was Variety Day A (landmine, KB swings, goblet squat, battle ropes, 78 min, no HR recorded). Fine as the wild card.
+- **Cardio, from the Apple Health exports:** Mon elliptical 54m (avg 119). Tue bike 39m with intervals (max 166), so the VO2 day happened. Wed through Fri nothing: no Thursday cardio, no boxing. Sat 10/10 a 27m ride after Variety Day A, avg 141, so tempo, not Zone 2. Resting HR on rested days: 61, 63, 64, 64 (10/7, 10/8, 10/9, 10/11), with one 72 at midnight on 10/10 and low HRV that day.
 - **Upper A: bumps landed.** Bench 45×10, press 25×10, lateral 15×12, pushdown 45×12, Pallof 32.5×10, farmer's 30 lb for 40s×3. Row stayed 90×8.
 - **Lower A: reps ran past the range, loads didn't move.** RDL 140×11 and leg curl 40×11 (planned 150 and 45). Cable abduction dropped to 12.5 (was 15). Pallof stayed at 32.5×11. Hack 140×10, leg press 200×8, calf 200×12.
 
@@ -19,7 +20,7 @@ This week the loads that got skipped are carried forward as the target. Same rul
 
 **Elbow:** hammer curl stays cut from Upper A and Upper B. Everything else is cleared.
 
-**VO2 gate (Tuesday):** go if resting HR is 63 or lower and sleep wasn't wrecked. Otherwise Zone 2, and the intervals move to Thursday's slot.
+**VO2 gate (Tuesday):** go if resting HR is 64 or lower (rested days ran 61 to 64 this week) and sleep wasn't wrecked. Otherwise Zone 2, and the intervals move to Thursday's slot.
 
 ### Schedule
 
@@ -30,7 +31,7 @@ This week the loads that got skipped are carried forward as the target. Same rul
 | Wed 10/14 | Off | Off | |
 | Thu 10/15 | Aerobic, 45–50m, treadmill incline walk or easy jog, Zone 2 | Upper B | Core 10m after cardio. One cardio session on strength days, morning |
 | Fri 10/16 | Boxing, 30–45m | Lower B | Trailing ~5m core per actual pattern |
-| Sat 10/17 | Long outdoor, 60–90m. Hike or easy track run. No vest with long duration | Optional wild card, skip if Friday slipped | Keep it aerobic, not a stroll |
+| Sat 10/17 | Long outdoor, 60–90m. Hike or easy track run. No vest with long duration | Optional wild card, skip if Friday slipped | Keep it Zone 2 this time. Last Saturday's ride ran at tempo |
 | Sun 10/18 | Off | Off | |
 
 Zone 2 = 108–125 bpm. Tempo = 126–143. Max HR is not settled: OH1 peak 167 on 9/28, true max thought to be 170–175. Interval targets assume ~172.
@@ -90,5 +91,5 @@ Rule: hit every set with 2+ reps left and the next step is yours. Reps to the to
 - **Elbow:** hammer curl cut, tendon is the only open item. Reassess weekly. If it isn't clearly better, call whoever did the PRP.
 - **Right side:** single-leg deadlift stability and the right glute. Same side, still not linked.
 - **Cable abduction:** dropped from 15 to 12.5 on 10/6. Say so if the right hip or ankle had anything to do with it.
-- **Resting HR:** 57 baseline, 58–66 during the 10/3 week. Today's value gates Tuesday.
+- **Resting HR:** 57 in July, 61 to 64 on rested days this week. A slow drift, not acted on. Tuesday morning's number gates the intervals.
 - **Friday core:** still open for the Product Owner/Architect. The cardio plan excludes Friday core, practice includes it.
