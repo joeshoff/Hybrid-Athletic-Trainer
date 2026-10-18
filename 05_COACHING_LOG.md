@@ -91,3 +91,5 @@ Proposals for the Product Owner/Architect:
 - smartgym local MCP needs a read path that survives macOS privacy blocks (or a documented Full Disk Access step, and a snapshot fallback).
 - HAE workouts need a reader that returns per-session summaries (type, start, duration, avg/max HR) without the full JSON.
 - 04_TODAY.md plan for 10/12 said Lower B Friday. It slid to Saturday and stacked with a long ride. A rule that Lower B and the long Saturday session do not share a day.
+
+- Sun 10/18: Joe asked to move Tuesday VO2 outdoors (hill repeats, then a 40-50m Zone 2 run home). Counter: trimmed to 10m Zone 2 + 4 x 3m uphill + 5-10m easy home (about 45-50m), Zone 2 run goes to Saturday at the track, Thursday drops the jog (three run days is the ceiling). Reason: 75-85m of running plus Lower A same day, and hill repeats caused the 9/15 right glute strain. Joe's prior hill session was 45s on / 2m off sprints. Glute reported fine 10/18; hill is a long paved climb with steep sections. Gate adds glute-clean-in-warm-up; fallback is the bike.

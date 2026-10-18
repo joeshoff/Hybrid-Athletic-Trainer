@@ -28,11 +28,11 @@ Rule is unchanged: first set of a new load is a feel set. Under 2 reps left, dro
 | Day | Cardio | Strength | Note |
 |---|---|---|---|
 | Mon 10/19 | Zone 2, 40-50m, elliptical on HR-control 121 off the H10 | Upper A | Easy on purpose after Saturday's ride. Core 10m after cardio |
-| Tue 10/20 | VO2, bike: 10m warm-up, 4 x 3m hard (HR 150-162 by minute 2), 3m easy between, 5m cool-down | Lower A | Gate: resting HR 64 or lower and sleep not wrecked, else Zone 2 and the intervals move to Thursday |
+| Tue 10/20 | VO2, outdoor hill: 10m Zone 2 jog to the hill, 4 x 3m uphill hard but paced (HR 150-162 by minute 2), walk or very easy jog down 3m between, 5-10m easy home. About 45-50m | Lower A | Not a sprint: pace you could hold 3m. Fast hike the steep sections. First repeat is a feel rep at about 85%. Gate: resting HR 64 or lower, sleep OK, right glute clean in the warm-up. Otherwise the bike, 4 x 3m as before |
 | Wed 10/21 | Off | Off | |
-| Thu 10/22 | Aerobic, 45-50m, treadmill incline walk or easy jog, Zone 2 | Upper B | Core 10m after cardio. Morning cardio, strength later |
+| Thu 10/22 | Aerobic, 45-50m, treadmill incline walk or bike, Zone 2. No jog this week | Upper B | Core 10m after cardio. Morning cardio, strength later |
 | Fri 10/23 | Boxing, 30-45m | Lower B | Trailing 5m core |
-| Sat 10/24 | Long outdoor, 60-90m, Zone 2. Hike or easy track run, no vest at this duration | No lifting | Pre-effort check: hydration, fuel, plan for water past 45m |
+| Sat 10/24 | Zone 2 run at the track, 40-50m, then an easy walk to fill 60m if you want. Or a hike. No vest | No lifting | Run days this week: Tue and Sat. Pre-effort check if it goes past 60m: hydration, fuel, water plan |
 | Sun 10/25 | Off | Off | |
 
 Zone 2 = 108-125 bpm. Tempo = 126-143. Max HR still unsettled (OH1 peak 167, true max thought 170-175).
@@ -87,10 +87,11 @@ Rule: all sets with 2+ reps left, then reps to the top of the range, then load, 
 ### Watching
 
 - **Elbow:** felt good on light hammer curls 10/15. Distal biceps tendon stays on watch. Any tenderness, drop the curl again.
-- **Right side:** single-leg DL stability and the right glute. Same side, still not linked.
+- **Right side:** single-leg DL stability and the right glute. Same side, still not linked. Glute feels fine, you can feel where you pulled it. Tuesday's hill is the test: if it tightens in the warm-up or on a repeat, stop and walk home, bike next time.
 - **Leg extension:** 65 x 10 became 65 x 8. Say whether the knee had anything to do with it.
 - **Lower A stall:** two identical sessions. The feel-set rule and the type-it-in step are the fix, not more waiting.
 - **Grip:** limited the 53 lb farmer's walk and the RDL before. Farmer's walks are the grip work, so they stay.
+- **Hill:** a long paved climb with some steep sections. Run the moderate stretch hard, hike the steep parts. A 3m repeat is a VO2 interval, not the 45s sprints that strained the glute on 9/15.
 - **Saturday ride:** exhausting after Lower B. Monday stays easy, and Tuesday's gate decides the VO2 session.
 - **Resting HR:** not checked this week (exports too large to read here). Tuesday morning's number gates the intervals.
 - **Block length:** this is week 5 of the current block (started 9/15). A new block or a lighter week for 10/26 is a proposal for Joe, not a decision.
