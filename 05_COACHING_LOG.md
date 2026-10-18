@@ -73,3 +73,21 @@ Proposal for the Product Owner/Architect: the trainer session read an empty week
 Equipment constraint, 10/11: Joe pointed out 27.5 lb dumbbells don't exist (25 or 30), which is part of why some planned bumps never happened. Shoulder press moved to 25 × 11–12 (rep progression, Update-OK) and pushdown to 50 × 10 (45 has been easy). Other targets that may not be real weights and are unchecked: incline DB 52.5, lateral raise 17.5, step-up 17.5, plate-loaded steps (hack 150, RDL 150, hip thrust 105). Asked Joe for the actual increments. Before writing any load target, check it against the increments he gives; do not assume 2.5 lb steps.
 
 Increments, Mon 10/12: Joe confirmed dumbbells go 7.5, 10, 12.5, 15, then 5 lb steps; cable stacks move in 2.5s (consistent with logged 32.5, 37.5, 42.5). Checked the 9/17 and 9/24 Upper B and 9/18 and 9/25 Lower B logs: incline was 50 x 10 x 3 (not 52.5), Upper B row 85 x 10, Upper B lateral raise 10 lb x 12, Upper B pushdown 40 x 12 (2 sets), step-up 15 x 8 x 4, hip thrust 90 x 10 x 3. Replaced the nonexistent targets: incline 55 x 8, lateral raise 15 x 13-15 (Mon) and 15 x 10 (Thu, fallback 12.5), step-up 15 x 10, leg curl 42.5 x 8 (Lower A), shoulder press 25 x 11-12 (Mon) and 25 x 9-10 (Thu). Still unverified: plate steps on hack squat (150), Smith RDL (150), Smith hip thrust (105), leg press (200). Asked Joe.
+
+
+## Sat 10/17: week review and 10/19 plan
+
+SmartGym read from a copy of GymModel.sqlite that Joe placed in the connected folder (the smartgym local MCP failed with `unable to open database file` because macOS privacy blocked the container folder; Terminal got access after Full Disk Access, Claude Desktop's launched server still failed). Read with python sqlite3. Core Data tables: ZHISTORY, ZWORKOUT, Z_11SETSDONE, ZVALUES (ZSECONDVALUE reps, ZTHIRDVALUE weight in kg), ZUNIQEXERCISE, ZEXERCISE.
+
+- Upper A 10/12 (50m): bench 50x8x3, row 90x8, press 25x11, face pull 14, lateral 15x12, pushdown 50x12, Pallof 32.5x10, farmer's 35 lb (40s/80s/80s logged).
+- Lower A 10/13 (61m): identical to 10/6 on all seven exercises (hack 140x10, calf 200x12, leg press 200x8, RDL 140x11, curl 40x11, abduction 12.5x12, Pallof 32.5x11). Joe confirmed 10/17 these are what he lifted, hack maybe not a clean 10, RDL can take the bump.
+- Upper B 10/15 (46m): lat pulldown 65x9, row 90x8, pushdown 50x12, stand-up 20x12, incline 55x10, press 25x9, hammer curl 25x10 (template weight, Joe used less, elbow felt good), lateral 15x12.
+- Lower B moved to Sat 10/17 09:05 (47m): SLDL 25x8x4, hip thrust 90x10, step-up 15x8x4, curl 40x10, leg extension 65x8 (was 65x10), KB farmer's 44 lb x 40s (template weight; 53 lb had a grip limit). Then a long bike starting 11:35, about 1,057 kcal active, exhausting per Joe.
+- Fri 10/16 boxing 20.5m (FightCamp via HAE, avg 116, max 134) plus 5m core.
+- Not verified: Mon/Tue/Thu AM cardio, Sat bike HR, resting HR. HAE JSON for 10/17 is 3.4 MB, too large to read through the Drive connector.
+- Lesson: SmartGym logs the template weight when Joe doesn't edit it. A logged weight is not proof of the load lifted. Ask when a number looks like a carry-over.
+
+Proposals for the Product Owner/Architect:
+- smartgym local MCP needs a read path that survives macOS privacy blocks (or a documented Full Disk Access step, and a snapshot fallback).
+- HAE workouts need a reader that returns per-session summaries (type, start, duration, avg/max HR) without the full JSON.
+- 04_TODAY.md plan for 10/12 said Lower B Friday. It slid to Saturday and stacked with a long ride. A rule that Lower B and the long Saturday session do not share a day.
