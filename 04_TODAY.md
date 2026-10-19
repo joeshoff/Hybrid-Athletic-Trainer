@@ -28,7 +28,7 @@ Rule is unchanged: first set of a new load is a feel set. Under 2 reps left, dro
 | Day | Cardio | Strength | Note |
 |---|---|---|---|
 | Mon 10/19 | Zone 2, 40-50m, elliptical on HR-control 121 off the H10 | Upper A | Easy on purpose after Saturday's ride. Core 10m after cardio |
-| Tue 10/20 | VO2, outdoor hill: 10m Zone 2 jog to the hill, 4 x 3m uphill hard but paced (HR 150-162 by minute 2), walk or very easy jog down 3m between, 5-10m easy home. About 45-50m | Lower A | Not a sprint: pace you could hold 3m. Fast hike the steep sections. First repeat is a feel rep at about 85%. Gate: resting HR 64 or lower, sleep OK, right glute clean in the warm-up. Otherwise the bike, 4 x 3m as before |
+| Tue 10/20 | VO2 hill run: 4 x 3m uphill at HR 150-162, 3m easy recovery between. Details in the Tuesday run block below | Lower A | Gate: resting HR 64 or lower, sleep OK, right glute clean in the warm-up. Otherwise the bike, same 4 x 3m |
 | Wed 10/21 | Off | Off | |
 | Thu 10/22 | Aerobic, 45-50m, treadmill incline walk or bike, Zone 2. No jog this week | Upper B | Core 10m after cardio. Morning cardio, strength later |
 | Fri 10/23 | Boxing, 30-45m | Lower B | Trailing 5m core |
@@ -36,6 +36,27 @@ Rule is unchanged: first set of a new load is a feel set. Under 2 reps left, dro
 | Sun 10/25 | Off | Off | |
 
 Zone 2 = 108-125 bpm. Tempo = 126-143. Max HR still unsettled (OH1 peak 167, true max thought 170-175).
+
+### Tuesday 10/20: VO2 hill run
+
+**4 intervals x 3 minutes uphill. Target HR 150-162. 3 minutes easy between each.**
+
+| Phase | Time | What | HR |
+|---|---|---|---|
+| Warm-up | 10m | Easy jog to the hill. Check the right glute here | Zone 2, 108-125 |
+| Interval 1 of 4 | 3m up | Feel rep, about 85% effort | Reach 150 by minute 2 |
+| Recovery | 3m | Walk or very easy jog down | Back under about 125 |
+| Intervals 2, 3, 4 | 3m up each | Hard but paced, a pace you could hold for 3 minutes. Hike the steep sections | Reach 150-162 by minute 2, hold to minute 3 |
+| Recovery | 3m after each | Walk or very easy jog down | Back under about 125 |
+| Cool-down | 5-10m | Easy jog home | Zone 2 |
+
+About 40-45m total.
+
+- HR lags effort by 1-2 minutes, so don't chase 150 in the first 30 seconds. If you're above 162 before minute 2, back off.
+- Not a sprint. This is a 3-minute VO2 interval, not the 45-second sprints that strained the glute on 9/15.
+- If you wear the H10, go by it rather than the watch.
+- Go/no-go before you leave: resting HR 64 or lower, sleep OK, glute clean in the warm-up. If any fails, do 4 x 3m on the bike at the same HR targets instead.
+- If the glute tightens in the warm-up or on any repeat, stop and walk home.
 
 Core checklist (Apple Fitness):
 - [ ] Monday 10/19
